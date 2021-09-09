@@ -1,4 +1,4 @@
-# New-Project
+# Rock Paper Sissors
 ![]()
 
 ## Overview
