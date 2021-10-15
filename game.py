@@ -26,3 +26,9 @@ for x in range(0, numGames):
         computerInput = "paper"
     elif generatedNum == 3:
         computerInput = "sissors"
+
+
+choice = str(input("Would you like to play again? y/n\n"))
+if choice == "y":
+    clear()
+    os.system("game.py")
