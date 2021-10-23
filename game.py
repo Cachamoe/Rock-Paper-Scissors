@@ -13,10 +13,11 @@ clear = lambda: os.system("cls")
 userInput = input("Choose rock, paper, or sissors\n")
 
 if userInput == "rock" and computerInput == "sissors":
-    print("You selected",userInput,"and the computer selected",computerInput,"You won thos round!")
+    print("You selected",userInput,"and the computer selected",computerInput,"You won this round!")
     userScore += 1
-
-
+elif userInput == "rock" and computerInput == "paper":
+    print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
+    computerScore += 1
 
 
 
