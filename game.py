@@ -20,6 +20,10 @@ elif userInput == "rock" and computerInput == "paper":
     computerScore += 1
 if userInput == "paper" and computerInput == "rock":
     print("You selected",userInput,"and the computer selected",computerInput,"You won this round!")
+    userScore += 1
+elif userInput == "paper" and computerInput == "sissors":
+    print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
+    computerScore += 1
 
 
 for x in range(0, numGames):
