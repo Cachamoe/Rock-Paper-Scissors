@@ -27,7 +27,9 @@ elif userInput == "paper" and computerInput == "sissors":
 if userInput == "scissors" and computerInput == "paper":
         print("You selected",userInput,"and the computer selected",computerInput,"You won this round!")
     userScore += 1
-
+elif userInput == "scissors" and computerInput == "rock":
+        print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
+    computerScore += 1
 
 for x in range(0, numGames):
     generatedNum = random.randint(1,3)
