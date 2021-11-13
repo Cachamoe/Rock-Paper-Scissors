@@ -40,6 +40,13 @@ for x in range(0, numGames):
     elif generatedNum == 3:
         computerInput = "sissors"
 
+if userScore > computerScore:
+    userWin = True
+elif userScore == computerScore:
+    draw = True
+
+
+
 
 choice = str(input("Would you like to play again? y/n\n"))
 if choice == "y":
