@@ -31,6 +31,7 @@ elif userInput == "scissors" and computerInput == "rock":
         print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
     computerScore += 1
 
+
 for x in range(0, numGames):
     generatedNum = random.randint(1,3)
     if generatedNum == 1:
@@ -40,12 +41,19 @@ for x in range(0, numGames):
     elif generatedNum == 3:
         computerInput = "sissors"
 
+
 if userScore > computerScore:
     userWin = True
 elif userScore == computerScore:
     draw = True
 
 
+if userWin ==  True:
+    print("Congratulations, you won!\nYour score:",userScore,"\nComputer's score:",computerScore)
+elif userWin == False:
+    print("Oh no, you lost!\nYour score:",userScore,"\nComputer's score:",computerScore)
+elif draw == True:
+    print("You tied!\nYour score:",userScore,"\nComputer's score:",computerScore)
 
 
 choice = str(input("Would you like to play again? y/n\n"))
