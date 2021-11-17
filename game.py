@@ -25,7 +25,7 @@ elif userInput == "paper" and computerInput == "sissors":
     print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
     computerScore += 1
 if userInput == "scissors" and computerInput == "paper":
-        print("You selected",userInput,"and the computer selected",computerInput,"You won this round!")
+    print("You selected",userInput,"and the computer selected",computerInput,"You won this round!")
     userScore += 1
 elif userInput == "scissors" and computerInput == "rock":
         print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
