@@ -10,6 +10,16 @@ draw = False
 clear = lambda: os.system("cls")
 
 
+for x in range(0, numGames):
+    generatedNum = random.randint(1,3)
+    if generatedNum == 1:
+        computerInput = "rock"
+    elif generatedNum == 2:
+        computerInput = "paper"
+    elif generatedNum == 3:
+        computerInput = "sissors"
+
+
 userInput = input("Choose rock, paper, or sissors\n")
 
 if userInput == "rock" and computerInput == "sissors":
@@ -30,16 +40,6 @@ if userInput == "scissors" and computerInput == "paper":
 elif userInput == "scissors" and computerInput == "rock":
     print("You selected",userInput,"and the computer selected",computerInput,"You lost this round!")
     computerScore += 1
-
-
-for x in range(0, numGames):
-    generatedNum = random.randint(1,3)
-    if generatedNum == 1:
-        computerInput = "rock"
-    elif generatedNum == 2:
-        computerInput = "paper"
-    elif generatedNum == 3:
-        computerInput = "sissors"
 
 
 if userScore > computerScore:
